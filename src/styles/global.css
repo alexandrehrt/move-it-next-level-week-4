@@ -54,3 +54,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+@media (max-width: 984px) {
+  html {
+    font-size: 50%;
+  }
+}

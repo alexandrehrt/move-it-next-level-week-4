@@ -27,3 +27,8 @@
 .profileContainer div p img {
   margin-right: 0.8rem;
 }
+
+/* medias */
+.profileContainer {
+  justify-content: center;
+}
