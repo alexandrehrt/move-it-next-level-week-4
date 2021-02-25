@@ -8,6 +8,13 @@
   flex-direction: column;
 }
 
+.switch {
+  margin: 0 0.5rem 2rem;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
 .container section {
   flex: 1;
 
