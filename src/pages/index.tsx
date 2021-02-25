@@ -12,11 +12,22 @@ import styles from '../styles/pages/Home.module.css';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
-  const [theme, setTheme] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
+
+  // Verificar o tema atual no localstorage
+  useEffect(() => {
+    const json = localStorage.getItem('site-dark-mode');
+    const currentMode = JSON.parse(json);
+    currentMode ? setDarkMode(true) : setDarkMode(false);
+  }, []);
 
   useEffect(() => {
-    !theme ? document.body.classList.add('dark') : document.body.classList.remove("dark");
-  }, [theme])
+    darkMode ? document.body.classList.add('dark') : document.body.classList.remove("dark");
+
+    // salvar o tema no localstorage
+    const json = JSON.stringify(darkMode);
+    localStorage.setItem('site-dark-mode', json);
+  }, [darkMode])
 
   return (
     <div className={styles.container}>
@@ -28,8 +39,8 @@ export default function Home() {
         <BiMoon color="#647dcf"/>
         <Switch
           className={styles.switch}
-          onChange={() => setTheme(!theme)}
-          checked={theme}
+          onChange={() => setDarkMode(!darkMode)}
+          checked={!darkMode}
           checkedIcon={false}
           uncheckedIcon={false}
           height={15}

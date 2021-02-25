@@ -6,7 +6,8 @@
 
 :root {
   --white: #fff;
-  --background: #f2f3f5;
+  --background-light: #f2f3f5;
+  --background-dark: #15202b;
   --gray-line: #dcdde0;
   --text: #666666;
   --text-highlight: #b3b9ff;
@@ -22,25 +23,22 @@ html {
   font-size: 62.5%;
 }
 
-/* @media (max-width: 1080px) {
-  html {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 720px) {
-  html {
-    font-size: 1.4rem;
-  }
-} */
-
 body {
-  background-color: var(--background);
+  background-color: var(--background-light);
   color: var(--text);
 }
 
 .dark {
-  background: #15202b;
+  background: var(--background-dark);
+  color: var(--white);
+}
+
+.dark .profileName {
+  color: var(--white);
+}
+
+.dark .textFont {
+  color: var(--text);
 }
 
 body,
