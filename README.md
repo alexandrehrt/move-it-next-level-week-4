@@ -7,7 +7,7 @@
 Projeto criado durante a Next Level Week 4 da Rocketseat.
 Move It faz uso da técnica pomodoro para estudos. Após 25 minutos de concentração, o usuário recebe um desafio, que consiste em algum exercício para o corpo ou para os olhos. Para cada desafio realizado, o usuário ganha experiência e aumenta de nível.
 
-Link para o aplicativo: [https://move-it-ten-dun.vercel.app/](url)
+Link para o aplicativo: [https://move-it-ten-dun.vercel.app/](https://move-it-ten-dun.vercel.app/)
 
 Tecnologias utilizadas:
 * Next.js
