@@ -38,13 +38,3 @@ npm run dev
 yarn dev
 ```
 Abrir [http://localhost:3000](http://localhost:3000) no seu navegador.
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open with your browser to see the result.
