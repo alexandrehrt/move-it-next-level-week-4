@@ -1,0 +1,120 @@
+.container {
+  height: 100vh;
+  background: #5965e0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container > img {
+  height: 100%;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  margin-left: 5rem;
+}
+
+.loginContainer > img {
+  height: 7.6rem;
+  width: 36rem;
+  margin-bottom: 5rem;
+  color: white;
+}
+
+.loginContainer #welcome {
+  font-weight: 600;
+  font-size: 3.6rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28rem;
+  margin-bottom: 3rem;
+}
+
+.inputContainer > img {
+  height: 4rem;
+  margin-right: 1.4rem;
+}
+
+.inputContainer span {
+  color: #b2b9ff;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.form input {
+  padding: 1.8rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-image: linear-gradient(to right, #4953b8, #5965e0);
+}
+
+.form input::placeholder {
+  color: #b2b9ff;
+}
+
+.form .feather {
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form button {
+  border: none;
+  padding: 1.5rem;
+
+  transition: all 0.2s;
+}
+
+.form button:hover {
+  opacity: 0.8;
+}
+
+/* medias */
+@media (max-width: 1155px) {
+  .container > img {
+    height: 60%;
+    width: 60%;
+  }
+}
+
+@media (max-width: 775px) {
+  .container > img {
+    height: 30%;
+    width: 30%;
+  }
+}
+
+@media (max-width: 483px) {
+  .container > img {
+    display: none;
+  }
+}
+
+@media (max-width: 330px) {
+  .loginContainer {
+    align-items: center;
+    margin: 0;
+  }
+
+  .loginContainer > img {
+    height: 80%;
+    width: 80%;
+  }
+}

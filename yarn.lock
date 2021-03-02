@@ -719,6 +719,11 @@ expand-template@^2.0.3:
   resolved "https://registry.yarnpkg.com/expand-template/-/expand-template-2.0.3.tgz#6e14b3fcee0f3a6340ecb57d2e8918692052a47c"
   integrity sha512-XYfuKMvj4O35f/pOXLObndIRvyQ+/+6AhODh+OKWj9S9498pHHn/IMszH+gt0fBCRWMNfk1ZSp5x3AifmnI2vg==
 
+feather-icons-react@^0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/feather-icons-react/-/feather-icons-react-0.4.3.tgz#50b5ee96a26773926636fa41ae3d60f2a8fee4db"
+  integrity sha512-tROWNpZD0HYOovJlaUoHwDN71S2HRoWMxtb3iKlJGObRGbSUzYdmPVcEO4Ksja8ADVbASDXOiD+KlkzDkPP7cA==
+
 fill-range@^7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/fill-range/-/fill-range-7.0.1.tgz#1919a6a7c75fe38b2c7c77e5198535da9acdda40"
