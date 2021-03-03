@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@auth0/nextjs-auth0": "^1.1.0",
     "feather-icons-react": "^0.4.3",
     "js-cookie": "^2.2.1",
     "next": "10.0.7",

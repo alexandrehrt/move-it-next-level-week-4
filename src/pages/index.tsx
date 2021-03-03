@@ -1,5 +1,7 @@
 import FeatherIcon from 'feather-icons-react';
+import Link from 'next/link'
 import { useState } from 'react';
+import { useUser } from '@auth0/nextjs-auth0';
 
 import styles from '../styles/pages/Index.module.css';
 
@@ -8,11 +10,14 @@ export default function Home() {
   const [userLogin, setUserLogin] = useState('');
   const [hasErrorMessage, setHasErrorMessage] = useState(false);
 
-const handleSubmit = (event: React.ChangeEvent<HTMLInputElement>):void => {
+const handleSubmit = (event: React.FormEvent<HTMLInputElement>):void => {
   event.preventDefault();
   userLogin === '' && setHasErrorMessage(true);
   
 };
+
+const { user } = useUser();
+console.log(user);
 
   return (
     <div className={styles.container}>
@@ -44,6 +49,10 @@ const handleSubmit = (event: React.ChangeEvent<HTMLInputElement>):void => {
               icon='arrow-right' 
               />
           </button>
+
+          <Link href="/api/auth/login/">
+            <a>Login</a>
+          </Link>
         </form>
         { hasErrorMessage && <p style={{color: '#d42323'}}>Insira um username válido</p> }
         <span></span>
