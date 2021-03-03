@@ -6,10 +6,11 @@ import styles from '../styles/pages/Index.module.css';
 
 export default function Home() {
   const [userLogin, setUserLogin] = useState('');
+  const [hasErrorMessage, setHasErrorMessage] = useState(false);
 
-const handleSubmit = (event) => {
+const handleSubmit = (event: React.ChangeEvent<HTMLInputElement>):void => {
   event.preventDefault();
-  
+  userLogin === '' && setHasErrorMessage(true);
   
 };
 
@@ -21,7 +22,7 @@ const handleSubmit = (event) => {
         <img src="logo.svg" alt="Move It"/>
         <span id={styles.welcome}>Bem-vindo</span>
         <div className={styles.inputContainer}>
-          <img src="github-icon.png" alt="Github"/>
+          <img src="/icons/github.svg" alt="Github"/>
           <span>Faça login com seu Github para começar</span>
         </div>
         <form onSubmit={e => handleSubmit(e)} className={styles.form} >
@@ -44,6 +45,7 @@ const handleSubmit = (event) => {
               />
           </button>
         </form>
+        { hasErrorMessage && <p style={{color: '#d42323'}}>Insira um username válido</p> }
         <span></span>
       </div>
     </div>
